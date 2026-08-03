@@ -1,1 +1,8 @@
+@font-face {
+  font-family: sekuya-font;
+  src: url(sekuya-font/Sekuya-Regular.ttf)
+}
 
+p {
+  font-family: sekuya-font, sans-serif;
+}
