@@ -11,13 +11,15 @@
 
 body {
   display: flex;
-  font-family: sekuya-font, sans-serif;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: sekuya-font;
 }
 
 
-
 .background {
-  min-width: 45%;
+  min-width: 35%;
   height: 100vh;
   position: relative;
   display: flex;
@@ -25,11 +27,6 @@ body {
   align-items: center;
   text-align: center;
 
-}
-
-.form {
-  background-color: rgba(46, 37, 37, 0.9);
-  width:55%;
 }
 
 .logo {
@@ -64,6 +61,91 @@ body {
   color: white;
   font-family: inherit;
   font-size: 5em;
-} /* Revisit to get text and logo to stay inside the div */
+} /*Revisit to get text and logo to stay inside the div*/
 
 
+/*Form*/
+
+
+
+
+form {
+  background-color: rgba(46, 37, 37, 0.9);
+  width: 65%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+fieldset {
+  width: 100%;
+  height: 100vh;
+  border: 0;
+}
+
+legend {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+#information {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 8em;
+  width: 70%;
+  border: 0;
+  padding: 16px;
+}
+
+
+#information > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+
+#information > div > div {
+  font-size: 16px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+input {
+  margin-top: 4em;
+  width: 200px;
+  inset: none;
+}
+
+input{
+  box-sizing: border-box;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 4em;
+}
+
+button {
+  padding: 4px 2em;
+}
+
+form #header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 2em;
+}
