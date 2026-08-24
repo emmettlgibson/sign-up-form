@@ -184,3 +184,17 @@ label {
   width: 300px;
   color: rgb(71, 71, 71);
 }
+
+input:hover {
+  background-color: #eeeeee;
+}
+
+input:focus {
+border-color: blue;
+background-color: #eeeeee;
+}
+
+input:user-invalid {
+  border-color: red;
+}
+
