@@ -198,3 +198,10 @@ input:user-invalid {
   border-color: red;
 }
 
+button:hover {
+  background-color: #596d48f1;
+}
+
+button:focus {
+  background-color: #55703d;
+}
